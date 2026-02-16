@@ -14,17 +14,34 @@ ACCOUNT_SID = os.getenv("TWILIO_ACCOUNT_SID")
 AUTH_TOKEN = os.getenv("TWILIO_AUTH_TOKEN")
 TWILIO_PHONE_NUMBER = os.getenv("TWILIO_PHONE_NUMBER")
 
-TEST_NUMBER = "+12405013291"
+client_openai = OpenAI()
+
+ACTIVE_CALLS = {}
+
+TEST_NUMBER = "+18054398008"
 
 app = Flask(__name__)
 
 
+import random
+from scenarios import SCENARIOS
+
 @app.route("/voice", methods=["POST"])
 def voice():
+    call_sid = request.form.get("CallSid")
+
+    scenario = random.choice(SCENARIOS)
+
+    ACTIVE_CALLS[call_sid] = {
+        "scenario": scenario,
+        "turn": 1,
+        "history": []
+    }
+
     response = VoiceResponse()
 
     response.say(
-        "Hello, I would like to schedule an appointment.",
+        "Hello, I am calling about an appointment.",
         voice="alice"
     )
 
@@ -42,58 +59,81 @@ def recording():
     call_sid = request.form.get("CallSid")
 
     if not recording_url:
-        print("No recording URL received.")
-        twiml = VoiceResponse()
-        twiml.say("Goodbye.")
-        return str(twiml)
+        return str(VoiceResponse())
 
 
-    print("Recording URL:", recording_url)
-
-    # Twilio recordings need .wav extension
     audio_url = recording_url + ".wav"
 
-    # Download audio with Twilio auth
-    response = requests.get(
+    response_audio = requests.get(
         audio_url,
         auth=(ACCOUNT_SID, AUTH_TOKEN)
     )
 
-    # Ensure transcripts folder exists
     os.makedirs("transcripts", exist_ok=True)
-
     filename = f"transcripts/{call_sid}_{int(datetime.now().timestamp())}.wav"
 
     with open(filename, "wb") as f:
-        f.write(response.content)
+        f.write(response_audio.content)
 
-        print("Saved recording:", filename)
-
-    # --- Transcribe using OpenAI ---
-    client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
-
+    # Transcribe clinic response
     with open(filename, "rb") as audio_file:
-        transcript = client.audio.transcriptions.create(
-            model="gpt-4o-mini-transcribe",
+        transcript = client_openai.audio.transcriptions.create(
+            model="whisper-1",
             file=audio_file
         )
 
-    transcript_text = transcript.text
+    clinic_text = transcript.text
+    print("Clinic said:", clinic_text)
 
-    print("Transcript:", transcript_text)
+    call_data = ACTIVE_CALLS.get(call_sid)
 
-    # Save transcript text
-    transcript_file = filename.replace(".wav", ".txt")
-    with open(transcript_file, "w") as f:
-        f.write(transcript_text)
+    if not call_data:
+        return str(VoiceResponse())
 
-    print("Saved transcript:", transcript_file)
+    call_data["history"].append({
+        "clinic": clinic_text
+    })
 
-    twiml = VoiceResponse()
-    twiml.say("Thank you. Goodbye.")
-    return str(twiml)
+    # Generate patient reply
+    scenario = call_data["scenario"]
 
+    prompt = f"""
+    You are acting as a patient in a phone call with a clinic AI.
 
+    Persona:
+    {scenario['persona']}
+
+    Clinic just said:
+    "{clinic_text}"
+
+    Respond naturally in one short sentence.
+    """
+
+    completion = client_openai.chat.completions.create(
+        model="gpt-4o-mini",
+        messages=[{"role": "user", "content": prompt}]
+    )
+
+    patient_reply = completion.choices[0].message.content
+    print("Patient reply:", patient_reply)
+
+    call_data["turn"] += 1
+
+    response = VoiceResponse()
+
+    if call_data["turn"] > 5:
+        response.say("Thank you, goodbye.")
+        response.hangup()
+        ACTIVE_CALLS.pop(call_sid, None)
+    else:
+        response.say(patient_reply, voice="alice")
+        response.record(
+            action="/recording",
+            method="POST",
+            max_length=30
+        )
+
+    return str(response)
 
 
 
