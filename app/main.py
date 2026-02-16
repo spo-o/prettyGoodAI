@@ -49,7 +49,8 @@ def make_call():
     call = client.calls.create(
         to=TEST_NUMBER,
         from_=TWILIO_PHONE_NUMBER,
-        url="https://interference-deemed-pike-advertisements.trycloudflare.com/voice"
+        url="https://prettygoodai-production.up.railway.app/voice"
+
     )
 
     print(f"Call initiated. SID: {call.sid}")
