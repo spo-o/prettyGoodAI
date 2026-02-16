@@ -5,6 +5,8 @@ from twilio.rest import Client
 from dotenv import load_dotenv
 import requests
 from datetime import datetime
+from openai import OpenAI
+
 
 load_dotenv()
 
@@ -65,11 +67,32 @@ def recording():
     with open(filename, "wb") as f:
         f.write(response.content)
 
-    print("Saved recording:", filename)
+        print("Saved recording:", filename)
+
+    # --- Transcribe using OpenAI ---
+    client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
+
+    with open(filename, "rb") as audio_file:
+        transcript = client.audio.transcriptions.create(
+            model="gpt-4o-mini-transcribe",
+            file=audio_file
+        )
+
+    transcript_text = transcript.text
+
+    print("Transcript:", transcript_text)
+
+    # Save transcript text
+    transcript_file = filename.replace(".wav", ".txt")
+    with open(transcript_file, "w") as f:
+        f.write(transcript_text)
+
+    print("Saved transcript:", transcript_file)
 
     twiml = VoiceResponse()
     twiml.say("Thank you. Goodbye.")
     return str(twiml)
+
 
 
 
