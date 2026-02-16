@@ -24,7 +24,7 @@ app = Flask(__name__)
 
 
 import random
-from app.scenarios import SCENARIOS
+from scenarios import SCENARIOS
 
 @app.route("/voice", methods=["POST"])
 def voice():
