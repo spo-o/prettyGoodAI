@@ -53,6 +53,48 @@ def voice():
 
     return str(response)
 
+def evaluate_conversation(call_sid, call_data):
+    conversation_text = ""
+
+    for turn in call_data["history"]:
+        conversation_text += f"{turn['role'].upper()}: {turn['text']}\n"
+
+    prompt = f"""
+        You are evaluating a healthcare voice AI conversation.
+
+        Return your answer in this format:
+
+        Task Completion: (Yes/Partial/No)
+        Confusion Detected: (Yes/No + short explanation)
+        Hallucination: (Yes/No + explanation)
+        Conversation Quality Issues: (list if any)
+        Overall Score: (1-10)
+
+        Transcript:
+        {conversation_text}
+        """
+
+
+
+    completion = client_openai.chat.completions.create(
+        model="gpt-4o-mini",
+        messages=[{"role": "user", "content": prompt}]
+    )
+
+    evaluation = completion.choices[0].message.content
+
+    os.makedirs("reports", exist_ok=True)
+
+    report_path = f"reports/{call_sid}_evaluation.txt"
+
+    with open(report_path, "w") as f:
+        f.write(conversation_text)
+        f.write("\n\n--- EVALUATION ---\n\n")
+        f.write(evaluation)
+
+    print("Saved evaluation report:", report_path)
+
+
 @app.route("/recording", methods=["POST"])
 def recording():
     recording_url = request.form.get("RecordingUrl")
@@ -91,8 +133,10 @@ def recording():
         return str(VoiceResponse())
 
     call_data["history"].append({
-        "clinic": clinic_text
+    "role": "clinic",
+    "text": clinic_text
     })
+
 
     # Generate patient reply
     scenario = call_data["scenario"]
@@ -117,14 +161,24 @@ def recording():
     patient_reply = completion.choices[0].message.content
     print("Patient reply:", patient_reply)
 
+    call_data["history"].append({
+    "role": "patient",
+    "text": patient_reply})
+
+
     call_data["turn"] += 1
 
     response = VoiceResponse()
 
     if call_data["turn"] > 5:
+        if call_data["history"]:
+            evaluate_conversation(call_sid, call_data)
+
+
         response.say("Thank you, goodbye.")
         response.hangup()
         ACTIVE_CALLS.pop(call_sid, None)
+
     else:
         response.say(patient_reply, voice="alice")
         response.record(
