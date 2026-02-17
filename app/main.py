@@ -186,7 +186,7 @@ Respond naturally in one short sentence.
 
     response = VoiceResponse()
 
-    if call_data["turn"] > 5:
+    if call_data["turn"] > 9:
         if call_data["history"]:
             evaluate_conversation(call_sid, call_data)
 
