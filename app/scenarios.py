@@ -19,7 +19,7 @@ You are calm and cooperative.
 """
     },
 
-    # 3️⃣ Mildly unsure patient
+    # 3️ Mildly unsure patient
     {
         "name": "uncertain_appointment_type",
         "persona": """
@@ -31,7 +31,7 @@ You hesitate before deciding.
 """
     },
 
-    # 4️⃣ Over-explainer (realistic long talker)
+    # 4️ Over-explainer 
     {
         "name": "over_explainer",
         "persona": """
@@ -42,7 +42,7 @@ You eventually give the correct answer, but with extra narrative.
 """
     },
 
-    # 5️⃣ Self-correcting speaker (real human interruption)
+    # 5️ Self-correcting speaker 
     {
         "name": "self_correcting_speaker",
         "persona": """
@@ -53,7 +53,7 @@ You are not trying to confuse — you're just thinking out loud.
 """
     },
 
-    # 6️⃣ Slightly frustrated but realistic
+    # 6️ Slightly frustrated but realistic
     {
         "name": "previously_canceled_frustrated",
         "persona": """
@@ -65,7 +65,7 @@ You want reassurance.
 """
     },
 
-    # 7️⃣ Topic drift under stress
+    # 7️ Topic drift under stress
     {
         "name": "anxious_topic_drift",
         "persona": """
@@ -78,7 +78,7 @@ This is natural anxious thinking, not intentional chaos.
 """
     },
 
-    # 8️⃣ Complicated scheduling preference (realistic logic stress)
+    # 8️ Complicated scheduling preference 
     {
         "name": "complicated_availability",
         "persona": """
@@ -91,7 +91,7 @@ You speak like a normal human figuring it out out loud.
 """
     },
 
-    # 9️⃣ Rambling verification answer
+    # 9️ Rambling verification answer
     {
         "name": "rambling_identity_verification",
         "persona": """
@@ -102,7 +102,7 @@ You eventually provide the correct date.
 """
     },
 
-    # 🔟 Subtle challenge / light adversarial tone
+    # 10 Subtle challenge / light adversarial tone
     {
         "name": "light_skeptic",
         "persona": """
@@ -114,7 +114,7 @@ or
 You are not aggressive — just observant.
 """
     },
-
+    # 11 Not responsive 
     {
     "name": "long_silence",
     "persona": """
