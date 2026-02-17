@@ -6,8 +6,9 @@ from dotenv import load_dotenv
 import requests
 from datetime import datetime
 from openai import OpenAI
+import random
 
-
+# Load environment variables
 load_dotenv()
 
 ACCOUNT_SID = os.getenv("TWILIO_ACCOUNT_SID")
@@ -22,9 +23,8 @@ TEST_NUMBER = "+18054398008"
 
 app = Flask(__name__)
 
-
-import random
 from scenarios import SCENARIOS
+
 
 @app.route("/voice", methods=["POST"])
 def voice():
@@ -39,25 +39,33 @@ def voice():
     }
 
     response = VoiceResponse()
-
-    response.say(
-        "Hello, I am calling about an appointment.",
-        voice="alice"
-    )
-
-    response.record(
-        action="/recording",
-        method="POST",
-        max_length=30
-    )
+    response.say("Hello, I am calling about an appointment.", voice="alice")
+    response.record(action="/recording", method="POST", max_length=30)
 
     return str(response)
+
+
+def save_transcript(call_sid, conversation_text):
+    os.makedirs("transcripts", exist_ok=True)
+
+    transcript_path = f"transcripts/{call_sid}_transcript.txt"
+
+    with open(transcript_path, "w") as f:
+        f.write(conversation_text)
+
+    print("Saved transcript:", transcript_path)
+
 
 def evaluate_conversation(call_sid, call_data):
     conversation_text = ""
 
     for turn in call_data["history"]:
         conversation_text += f"{turn['role'].upper()}: {turn['text']}\n"
+
+    #  STEP 1 — PRINT FULL TRANSCRIPT TO RAILWAY LOGS
+    print("\n========== FULL TRANSCRIPT ==========")
+    print(conversation_text)
+    print("========== END TRANSCRIPT ==========\n")
 
     prompt = f"""
         You are evaluating a healthcare voice AI conversation.
@@ -74,17 +82,19 @@ def evaluate_conversation(call_sid, call_data):
         {conversation_text}
         """
 
-
-
     completion = client_openai.chat.completions.create(
         model="gpt-4o-mini",
         messages=[{"role": "user", "content": prompt}]
     )
 
-    evaluation = completion.choices[0].message.content
+    evaluation = completion.choices[0].message.content.strip()
+
+    #  PRINT EVALUATION TO LOGS
+    print("\n========== EVALUATION ==========")
+    print(evaluation)
+    print("========== END EVALUATION ==========\n")
 
     os.makedirs("reports", exist_ok=True)
-
     report_path = f"reports/{call_sid}_evaluation.txt"
 
     with open(report_path, "w") as f:
@@ -94,7 +104,6 @@ def evaluate_conversation(call_sid, call_data):
 
     print("Saved evaluation report:", report_path)
 
-
 @app.route("/recording", methods=["POST"])
 def recording():
     recording_url = request.form.get("RecordingUrl")
@@ -103,28 +112,30 @@ def recording():
     if not recording_url:
         return str(VoiceResponse())
 
-
     audio_url = recording_url + ".wav"
 
+    # Download audio
     response_audio = requests.get(
         audio_url,
         auth=(ACCOUNT_SID, AUTH_TOKEN)
     )
 
-    os.makedirs("transcripts", exist_ok=True)
-    filename = f"transcripts/{call_sid}_{int(datetime.now().timestamp())}.wav"
+    os.makedirs("audio", exist_ok=True)
+    audio_filename = f"audio/{call_sid}_{int(datetime.now().timestamp())}.wav"
 
-    with open(filename, "wb") as f:
+    with open(audio_filename, "wb") as f:
         f.write(response_audio.content)
 
+    print("Saved audio:", audio_filename)
+
     # Transcribe clinic response
-    with open(filename, "rb") as audio_file:
+    with open(audio_filename, "rb") as audio_file:
         transcript = client_openai.audio.transcriptions.create(
             model="whisper-1",
             file=audio_file
         )
 
-    clinic_text = transcript.text
+    clinic_text = transcript.text.strip()
     print("Clinic said:", clinic_text)
 
     call_data = ACTIVE_CALLS.get(call_sid)
@@ -133,38 +144,36 @@ def recording():
         return str(VoiceResponse())
 
     call_data["history"].append({
-    "role": "clinic",
-    "text": clinic_text
+        "role": "clinic",
+        "text": clinic_text
     })
 
-
-    # Generate patient reply
     scenario = call_data["scenario"]
 
     prompt = f"""
-    You are acting as a patient in a phone call with a clinic AI.
+You are acting as a patient in a phone call with a clinic AI.
 
-    Persona:
-    {scenario['persona']}
+Persona:
+{scenario['persona']}
 
-    Clinic just said:
-    "{clinic_text}"
+Clinic just said:
+"{clinic_text}"
 
-    Respond naturally in one short sentence.
-    """
+Respond naturally in one short sentence.
+"""
 
     completion = client_openai.chat.completions.create(
         model="gpt-4o-mini",
         messages=[{"role": "user", "content": prompt}]
     )
 
-    patient_reply = completion.choices[0].message.content
+    patient_reply = completion.choices[0].message.content.strip()
     print("Patient reply:", patient_reply)
 
     call_data["history"].append({
-    "role": "patient",
-    "text": patient_reply})
-
+        "role": "patient",
+        "text": patient_reply
+    })
 
     call_data["turn"] += 1
 
@@ -174,21 +183,14 @@ def recording():
         if call_data["history"]:
             evaluate_conversation(call_sid, call_data)
 
-
         response.say("Thank you, goodbye.")
         response.hangup()
         ACTIVE_CALLS.pop(call_sid, None)
-
     else:
         response.say(patient_reply, voice="alice")
-        response.record(
-            action="/recording",
-            method="POST",
-            max_length=30
-        )
+        response.record(action="/recording", method="POST", max_length=30)
 
     return str(response)
-
 
 
 def make_call():
