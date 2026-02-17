@@ -96,7 +96,6 @@ def evaluate_conversation(call_sid, call_data):
 
     evaluation = completion.choices[0].message.content.strip()
 
-    #  PRINT EVALUATION TO LOGS
     print("\n========== EVALUATION ==========")
     print(evaluation)
     print("========== END EVALUATION ==========\n")
@@ -121,7 +120,6 @@ def recording():
 
     audio_url = recording_url + ".wav"
 
-    # Download audio
     response_audio = requests.get(
         audio_url,
         auth=(ACCOUNT_SID, AUTH_TOKEN)
@@ -158,16 +156,16 @@ def recording():
     scenario = call_data["scenario"]
 
     prompt = f"""
-You are acting as a patient in a phone call with a clinic AI.
+    You are acting as a patient in a phone call with a clinic AI.
 
-Persona:
-{scenario['persona']}
+    Persona:
+    {scenario['persona']}
 
-Clinic just said:
-"{clinic_text}"
+    Clinic just said:
+    "{clinic_text}"
 
-Respond naturally in one short sentence.
-"""
+    Respond naturally in one short sentence.
+    """
 
     completion = client_openai.chat.completions.create(
         model="gpt-4o-mini",

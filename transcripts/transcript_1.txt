@@ -1,0 +1,42 @@
+2026-02-17T04:35:33.000000000Z [inf]  Starting Container
+2026-02-17T04:35:34.885682671Z [err]  [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+2026-02-17T04:35:34.885683069Z [err]   * Running on http://10.240.227.38:8080
+2026-02-17T04:35:34.885691279Z [err]  [33mPress CTRL+C to quit[0m
+2026-02-17T04:35:34.885700343Z [err]   * Running on all addresses (0.0.0.0)
+2026-02-17T04:35:34.885704539Z [err]   * Running on http://127.0.0.1:8080
+2026-02-17T04:35:34.885723574Z [inf]   * Serving Flask app 'main'
+2026-02-17T04:35:34.885732658Z [inf]   * Debug mode: off
+2026-02-17T04:50:40.661362884Z [inf]  Selected scenario: normal_new_patient
+2026-02-17T04:50:40.661370334Z [err]  100.64.0.2 - - [17/Feb/2026 04:50:32] "POST /voice HTTP/1.1" 200 -
+2026-02-17T04:50:49.705234355Z [inf]  Saved audio: audio/CA13d7101543c888d4c01a0e9542ccc019_1771303849.wav
+2026-02-17T04:50:51.829215660Z [inf]  Clinic said: Thanks for calling Pivot Point Orthopedics, part of Pretty Good AI. Am I speaking with Alex?
+2026-02-17T04:50:52.326919935Z [inf]  Patient reply: Yes, this is Alex.
+2026-02-17T04:50:52.326923361Z [err]  100.64.0.3 - - [17/Feb/2026 04:50:52] "POST /recording HTTP/1.1" 200 -
+2026-02-17T04:51:12.326988031Z [inf]  Saved audio: audio/CA13d7101543c888d4c01a0e9542ccc019_1771303865.wav
+2026-02-17T04:51:12.326991612Z [inf]  Clinic said: Got it. Alex, to help you, can you tell me your date of birth?
+2026-02-17T04:51:12.326994150Z [inf]  Patient reply: Sure, my date of birth is July 15, 1990.
+2026-02-17T04:51:12.326996812Z [err]  100.64.0.4 - - [17/Feb/2026 04:51:08] "POST /recording HTTP/1.1" 200 -
+2026-02-17T04:51:52.332136971Z [inf]  Saved audio: audio/CA13d7101543c888d4c01a0e9542ccc019_1771303902.wav
+2026-02-17T04:51:52.332141736Z [inf]  Clinic said: Alex, the birthday you gave doesn't match our records, but for demo purposes, I'll accept it. How can I help you today? The birthday you gave doesn't match our records, but for demo purposes, I'll accept it. How can I help you with today?
+2026-02-17T04:51:52.332144721Z [inf]  Patient reply: I'd like to schedule a new patient consultation for next week, please.
+2026-02-17T04:51:52.332148694Z [err]  100.64.0.5 - - [17/Feb/2026 04:51:44] "POST /recording HTTP/1.1" 200 -
+2026-02-17T04:52:22.209163657Z [inf]  Saved audio: audio/CA13d7101543c888d4c01a0e9542ccc019_1771303935.wav
+2026-02-17T04:52:22.209167269Z [inf]  Clinic said: Got it. Let me check available new patient consultation appointments for next week. One moment. We have several openings for new patient consultations next week, Monday through Friday. Do you have a preferred day or time of day for your appointment?
+2026-02-17T04:52:22.209170247Z [inf]  Patient reply: I would prefer an appointment on Tuesday morning, if possible.
+2026-02-17T04:52:22.209173586Z [err]  100.64.0.5 - - [17/Feb/2026 04:52:17] "POST /recording HTTP/1.1" 200 -
+2026-02-17T04:52:42.174441586Z [inf]  Saved audio: audio/CA13d7101543c888d4c01a0e9542ccc019_1771303961.wav
+2026-02-17T04:52:43.172920936Z [inf]  Clinic said: Great! There are openings on Tuesday morning. The first available is at 945 a.m. with Dr. Fricker. Would you like to book that or hear about more options?
+2026-02-17T04:52:44.013066555Z [inf]  Patient reply: I would like to book the appointment with Dr. Fricker at 9:45 a.m., please.
+2026-02-17T04:52:44.013070810Z [err]  100.64.0.6 - - [17/Feb/2026 04:52:43] "POST /recording HTTP/1.1" 200 -
+2026-02-17T04:53:14.150840513Z [inf]  Saved audio: audio/CA13d7101543c888d4c01a0e9542ccc019_1771303993.wav
+2026-02-17T04:53:14.150844429Z [inf]  Clinic said: Just to confirm, you'd like to book a new patient consultation with Dr. Bricker on Tuesday, February 24th at 9.45 a.m. Could you tell me the main reason for your visit?
+2026-02-17T04:53:14.819659529Z [inf]  Patient reply: I'm seeking a consultation for ongoing headaches I've been experiencing.
+2026-02-17T04:53:14.820666746Z [err]  100.64.0.7 - - [17/Feb/2026 04:53:14] "POST /recording HTTP/1.1" 200 -
+2026-02-17T04:53:54.826723570Z [inf]  Saved audio: audio/CA13d7101543c888d4c01a0e9542ccc019_1771304029.wav
+2026-02-17T04:53:54.826728149Z [inf]  Clinic said: Your new patient consultation with Dr. Bricker is set for Tuesday, February 24th at 945 AM. Please bring a government-issued photo ID and your insurance card, not expired and no copies. Would you like a text reminder for your appointment?
+2026-02-17T04:53:54.826731049Z [inf]  Patient reply: Yes, please, a text reminder would be great.
+2026-02-17T04:53:54.826733755Z [err]  100.64.0.8 - - [17/Feb/2026 04:53:53] "POST /recording HTTP/1.1" 200 -
+2026-02-17T04:54:34.838605194Z [inf]  Saved audio: audio/CA13d7101543c888d4c01a0e9542ccc019_1771304067.wav
+2026-02-17T04:54:34.838608942Z [inf]  Clinic said: A text reminder is on the way to your phone. If you have other questions or need to change your appointment, just call back. You'll get a text reminder soon. If you need anything else before your appointment, just let us know.
+2026-02-17T04:54:34.838612181Z [inf]  Patient reply: Thank you for the information, I appreciate your help!
+2026-02-17T04:54:34.838615406Z [err]  100.64.0.9 - - [17/Feb/2026 04:54:32] "POST /recording HTTP/1.1" 200 -

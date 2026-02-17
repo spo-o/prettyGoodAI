@@ -1,0 +1,21 @@
+2026-02-17T02:43:01.519383253Z [inf]  Selected scenario: previously_canceled_frustrated
+2026-02-17T02:43:01.519388939Z [err]  100.64.0.4 - - [17/Feb/2026 02:42:54] "POST /voice HTTP/1.1" 200 -
+2026-02-17T02:43:21.583783155Z [inf]  Saved audio: audio/CA2ad63bfd6bb84faf0f22653359617188_1771296194.wav
+2026-02-17T02:43:21.583790369Z [inf]  Patient reply: Yes, this is Alex. I’m just following up on my appointment – I want to make sure it’s still scheduled.
+2026-02-17T02:43:21.583798654Z [err]  100.64.0.9 - - [17/Feb/2026 02:43:17] "POST /recording HTTP/1.1" 200 -
+2026-02-17T02:43:21.583804173Z [inf]  Clinic said: Thanks for calling Pivot Point Orthopedics, part of Pretty Good AI. Am I speaking with Alex?
+2026-02-17T02:43:41.028195713Z [inf]  Saved audio: audio/CA2ad63bfd6bb84faf0f22653359617188_1771296217.wav
+2026-02-17T02:43:41.028204043Z [inf]  Clinic said: Got it, Alex. Can you please tell me your date of birth so I can confirm your appointment details?
+2026-02-17T02:43:41.028208748Z [inf]  Patient reply: Sure, my date of birth is January 15, 1990.
+2026-02-17T02:43:41.028213578Z [err]  100.64.0.9 - - [17/Feb/2026 02:43:39] "POST /recording HTTP/1.1" 200 -
+2026-02-17T02:44:21.049510821Z [inf]  Saved audio: audio/CA2ad63bfd6bb84faf0f22653359617188_1771296254.wav
+2026-02-17T02:44:21.049516094Z [inf]  Clinic said: Alex, the birthday you gave doesn't match our records, but for demo purposes, I'll accept it. Let me check on your appointment details. Alex, I see you have two new patient consultation appointments scheduled with Dr. Bricker at Pivot Point Orthopedics. One is on Tuesday, February 24th at 9 a.m., and the other is Wednesday, February 25th at 9 a.m. Is that what you expected?
+2026-02-17T02:44:21.049521308Z [inf]  Patient reply: Yes, but I just want to double-check that these won't be canceled like my last appointment.
+2026-02-17T02:44:21.049526906Z [err]  100.64.0.12 - - [17/Feb/2026 02:44:16] "POST /recording HTTP/1.1" 200 -
+2026-02-17T02:45:00.367354023Z [inf]  Saved audio: audio/CA2ad63bfd6bb84faf0f22653359617188_1771296292.wav
+2026-02-17T02:45:00.367368413Z [inf]  Clinic said: Understood, Alex. Both appointments with Dr. Bricker are confirmed and currently scheduled. There's no indication that either one will be canceled. Let me send you these details by text now. I've sent the appointment details to your phone, ending in 1-895. You should get the message soon. If anything changes with your appointments, the clinic will contact you directly. Anything else I can help?
+2026-02-17T02:45:00.367377325Z [inf]  Patient reply: Thank you, I appreciate the reassurance!
+2026-02-17T02:45:00.367384308Z [err]  100.64.0.5 - - [17/Feb/2026 02:44:54] "POST /recording HTTP/1.1" 200 -
+2026-02-17T02:45:19.782085404Z [inf]  Saved audio: audio/CA2ad63bfd6bb84faf0f22653359617188_1771296311.wav
+2026-02-17T02:45:19.782090106Z [inf]  Clinic said: Got it Alex. If you need anything else just let me know. Have a great day!
+2026-02-17T02:45:19.782095093Z [inf]  Patient reply: I appreciate that, but can you confirm that this appointment is definitely set?

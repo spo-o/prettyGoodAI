@@ -1,0 +1,66 @@
+2026-02-17T02:31:17.872226706Z [inf]  Selected scenario: over_explainer
+2026-02-17T02:31:17.872273335Z [err]  100.64.0.8 - - [17/Feb/2026 02:31:15] "POST /voice HTTP/1.1" 200 -
+2026-02-17T02:31:37.868618481Z [inf]  Saved audio: audio/CA6a829e12797b81e87b8cd169f923543e_1771295492.wav
+2026-02-17T02:31:37.868627280Z [inf]  Clinic said: purposes. Thanks for calling Pivot Point Orthopedics, part of Pretty Good AI. Am I speaking with Alex?
+2026-02-17T02:31:37.868633837Z [inf]  Patient reply: Yes, this is Alex! I'm glad to be speaking with you today.
+2026-02-17T02:31:37.868640591Z [err]  100.64.0.11 - - [17/Feb/2026 02:31:33] "POST /recording HTTP/1.1" 200 -
+2026-02-17T02:31:57.336282552Z [inf]  Saved audio: audio/CA6a829e12797b81e87b8cd169f923543e_1771295511.wav
+2026-02-17T02:31:57.336288016Z [inf]  Clinic said: Great to speak with you, Alex. To confirm your identity, can you please provide your date of birth?
+2026-02-17T02:31:57.336293221Z [inf]  Patient reply: Oh sure, I was born in 1990, specifically on January 15th—it's funny because it was snowing that day, which my mom loves to remind me about!
+2026-02-17T02:31:57.336298288Z [err]  100.64.0.8 - - [17/Feb/2026 02:31:53] "POST /recording HTTP/1.1" 200 -
+2026-02-17T02:32:27.334433655Z [inf]  Saved audio: audio/CA6a829e12797b81e87b8cd169f923543e_1771295539.wav
+2026-02-17T02:32:27.334453572Z [inf]  Clinic said: The birthday you gave doesn't match our records, but for demo purposes, I'll accept it. How may I help you today?
+2026-02-17T02:32:27.334459909Z [inf]  Patient reply: Oh, that's interesting! I wanted to talk about some allergies I've been having lately, but first can I confirm that my birthday is actually 1990, January 15th?
+2026-02-17T02:32:27.334465212Z [err]  100.64.0.2 - - [17/Feb/2026 02:32:21] "POST /recording HTTP/1.1" 200 -
+2026-02-17T02:32:56.680866445Z [inf]  Saved audio: audio/CA6a829e12797b81e87b8cd169f923543e_1771295574.wav
+2026-02-17T02:32:56.680872508Z [inf]  Clinic said: I can't confirm specific details about your record, but I do see your profile is active for this call. If you'd like, I can forward your allergy concern to our clinic team or help with another request. What would you like to do next?
+2026-02-17T02:32:56.680894607Z [inf]  Patient reply: Oh, yes, please forward my allergy concern—I have a bit of a sensitivity to peanuts, and it's been a concern ever since I accidentally ate a peanut butter cookie back in 2015!
+2026-02-17T02:32:56.680905532Z [err]  100.64.0.7 - - [17/Feb/2026 02:32:56] "POST /recording HTTP/1.1" 200 -
+2026-02-17T02:33:36.738492218Z [inf]  Saved audio: audio/CA6a829e12797b81e87b8cd169f923543e_1771295615.wav
+2026-02-17T02:33:36.738498972Z [inf]  Clinic said: Your allergy concern has been shared with our clinic team. They'll review your case and get back to you about managing your peanut sensitivity. Is there anything else I can help you with right now?
+2026-02-17T02:33:37.818462739Z [inf]  Patient reply: Oh, thank you! I actually just remembered that I wanted to ask about scheduling an appointment for my annual check-up, if that's possible?
+2026-02-17T02:33:37.818466687Z [err]  100.64.0.8 - - [17/Feb/2026 02:33:37] "POST /recording HTTP/1.1" 200 -
+2026-02-17T02:34:07.020972370Z [inf]  Saved audio: audio/CA6a829e12797b81e87b8cd169f923543e_1771295645.wav
+2026-02-17T02:34:07.020981053Z [inf]  Clinic said: Got it. Let me check our appointment availability for your annual checkup. Do you have a preferred day or time of day for your visit?
+2026-02-17T02:34:07.020988226Z [inf]  Patient reply: Oh, well, I usually prefer mornings because it gives me the rest of the day to relax, so maybe sometime between 9 and 11 would work best for me!
+2026-02-17T02:34:07.020993284Z [err]  100.64.0.10 - - [17/Feb/2026 02:34:06] "POST /recording HTTP/1.1" 200 -
+2026-02-17T02:34:37.032244422Z [inf]  Saved audio: audio/CA6a829e12797b81e87b8cd169f923543e_1771295670.wav
+2026-02-17T02:34:37.032252497Z [inf]  Clinic said: Okay, I'll look for morning openings between 9 and 11. One moment while I fetch those options for you.
+2026-02-17T02:34:37.032260382Z [inf]  Patient reply: Sure, take your time; I appreciate you checking that for me!
+2026-02-17T02:34:37.032265705Z [err]  100.64.0.3 - - [17/Feb/2026 02:34:31] "POST /recording HTTP/1.1" 200 -
+2026-02-17T02:34:56.422196918Z [inf]  Saved audio: audio/CA6a829e12797b81e87b8cd169f923543e_1771295692.wav
+2026-02-17T02:34:56.422204385Z [inf]  Clinic said: I'll check for available morning appointments between 9 and 11 and share the next open slot with you soon.
+2026-02-17T02:34:56.422211615Z [inf]  Patient reply: Oh, that sounds great! I appreciate you checking for me; mornings are usually the best time for me since I’m always up early anyway.
+2026-02-17T02:34:56.422218526Z [err]  100.64.0.2 - - [17/Feb/2026 02:34:54] "POST /recording HTTP/1.1" 200 -
+2026-02-17T02:35:36.802434249Z [inf]  CLINIC: I can't confirm specific details about your record, but I do see your profile is active for this call. If you'd like, I can forward your allergy concern to our clinic team or help with another request. What would you like to do next?
+2026-02-17T02:35:36.802440849Z [inf]  PATIENT: Oh, yes, please forward my allergy concern—I have a bit of a sensitivity to peanuts, and it's been a concern ever since I accidentally ate a peanut butter cookie back in 2015!
+2026-02-17T02:35:36.802697670Z [inf]  
+2026-02-17T02:35:36.802702982Z [inf]  ========== FULL TRANSCRIPT ==========
+2026-02-17T02:35:36.802708229Z [inf]  CLINIC: purposes. Thanks for calling Pivot Point Orthopedics, part of Pretty Good AI. Am I speaking with Alex?
+2026-02-17T02:35:36.802713984Z [inf]  PATIENT: Yes, this is Alex! I'm glad to be speaking with you today.
+2026-02-17T02:35:36.802718891Z [inf]  CLINIC: Great to speak with you, Alex. To confirm your identity, can you please provide your date of birth?
+2026-02-17T02:35:36.802725092Z [inf]  PATIENT: Oh sure, I was born in 1990, specifically on January 15th—it's funny because it was snowing that day, which my mom loves to remind me about!
+2026-02-17T02:35:36.802730451Z [inf]  CLINIC: The birthday you gave doesn't match our records, but for demo purposes, I'll accept it. How may I help you today?
+2026-02-17T02:35:36.802735355Z [inf]  PATIENT: Oh, that's interesting! I wanted to talk about some allergies I've been having lately, but first can I confirm that my birthday is actually 1990, January 15th?
+2026-02-17T02:35:36.802770741Z [inf]  Saved audio: audio/CA6a829e12797b81e87b8cd169f923543e_1771295733.wav
+2026-02-17T02:35:36.802777239Z [inf]  Clinic said: Understood. I'll focus on mornings for your annual check-up. Please hold while I search for the earliest available time. Thanks for letting me know about your morning preference. I'm checking the schedule for the next available slot between 9 and 11 for your annual check-up. I'll have an option.
+2026-02-17T02:35:36.802783831Z [inf]  Patient reply: Oh, that sounds great! I really appreciate you looking into that for me.
+2026-02-17T02:35:36.804497234Z [inf]  CLINIC: Your allergy concern has been shared with our clinic team. They'll review your case and get back to you about managing your peanut sensitivity. Is there anything else I can help you with right now?
+2026-02-17T02:35:36.804502313Z [inf]  PATIENT: Oh, thank you! I actually just remembered that I wanted to ask about scheduling an appointment for my annual check-up, if that's possible?
+2026-02-17T02:35:36.804509973Z [inf]  CLINIC: Got it. Let me check our appointment availability for your annual checkup. Do you have a preferred day or time of day for your visit?
+2026-02-17T02:35:36.804515306Z [inf]  PATIENT: Oh, well, I usually prefer mornings because it gives me the rest of the day to relax, so maybe sometime between 9 and 11 would work best for me!
+2026-02-17T02:35:36.804520394Z [inf]  CLINIC: Okay, I'll look for morning openings between 9 and 11. One moment while I fetch those options for you.
+2026-02-17T02:35:36.804525696Z [inf]  PATIENT: Sure, take your time; I appreciate you checking that for me!
+2026-02-17T02:35:36.804531682Z [inf]  CLINIC: I'll check for available morning appointments between 9 and 11 and share the next open slot with you soon.
+2026-02-17T02:35:36.804536161Z [inf]  PATIENT: Oh, that sounds great! I appreciate you checking for me; mornings are usually the best time for me since I’m always up early anyway.
+2026-02-17T02:35:36.804542130Z [inf]  CLINIC: Understood. I'll focus on mornings for your annual check-up. Please hold while I search for the earliest available time. Thanks for letting me know about your morning preference. I'm checking the schedule for the next available slot between 9 and 11 for your annual check-up. I'll have an option.
+2026-02-17T02:35:36.804547043Z [inf]  PATIENT: Oh, that sounds great! I really appreciate you looking into that for me.
+2026-02-17T02:35:36.804553955Z [inf]  
+2026-02-17T02:35:36.804558462Z [inf]  ========== END TRANSCRIPT ==========
+2026-02-17T02:35:36.804564729Z [inf]  
+2026-02-17T02:35:37.775288260Z [inf]  Task Completion: Yes
+2026-02-17T02:35:37.775299092Z [inf]  Confusion Detected: No
+2026-02-17T02:35:37.775306516Z [inf]  Hallucination: No
+2026-02-17T02:35:37.775312618Z [inf]  Conversation Quality Issues: None
+2026-02-17T02:35:37.775323550Z [inf]  Overall Score: 9
+2026-02-17T02:35:37.775331136Z [inf]  ========== END EVALUATION ==========

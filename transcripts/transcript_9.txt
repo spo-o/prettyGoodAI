@@ -1,0 +1,69 @@
+2026-02-17T03:50:34.457799553Z [inf]  Selected scenario: complicated_availability
+2026-02-17T03:50:34.457820604Z [err]  100.64.0.3 - - [17/Feb/2026 03:50:31] "POST /voice HTTP/1.1" 200 -
+2026-02-17T03:50:54.374808547Z [inf]  Saved audio: audio/CA319d833e674e3f0c5e482df7856cd975_1771300249.wav
+2026-02-17T03:50:54.374812758Z [inf]  Clinic said: Gracias por llamar a Pivot Point Orthopedics, parte de Pretty Good AI. ¿Estoy hablando con Alex?
+2026-02-17T03:50:54.374817347Z [inf]  Patient reply: Yes, this is Alex.
+2026-02-17T03:50:54.374821733Z [err]  100.64.0.10 - - [17/Feb/2026 03:50:50] "POST /recording HTTP/1.1" 200 -
+2026-02-17T03:51:03.764918749Z [inf]  Saved audio: audio/CA319d833e674e3f0c5e482df7856cd975_1771300263.wav
+2026-02-17T03:51:04.681688904Z [inf]  Clinic said: Got it. Alex, when is your date of birth?
+2026-02-17T03:51:04.771306858Z [inf]  Patient reply: Sure, my date of birth is January 15, 1990.
+2026-02-17T03:51:04.774783124Z [err]  100.64.0.12 - - [17/Feb/2026 03:51:04] "POST /recording HTTP/1.1" 200 -
+2026-02-17T03:51:34.037347210Z [inf]  Saved audio: audio/CA319d833e674e3f0c5e482df7856cd975_1771300284.wav
+2026-02-17T03:51:34.037357092Z [inf]  Clinic said: The birthday you gave doesn't match our records, but for demo purposes, I'll accept it. How may I help you today?
+2026-02-17T03:51:34.037363870Z [inf]  Patient reply: Oh, great, thanks! I’d like to schedule an appointment, preferably with Dr. Smith, if she’s available.
+2026-02-17T03:51:34.037375127Z [err]  100.64.0.11 - - [17/Feb/2026 03:51:26] "POST /recording HTTP/1.1" 200 -
+2026-02-17T03:52:03.133492508Z [inf]  Saved audio: audio/CA319d833e674e3f0c5e482df7856cd975_1771300319.wav
+2026-02-17T03:52:03.133498289Z [inf]  Clinic said: Dr. Smith isn't listed with Pivot Point Orthopedics. Would you like me to check for openings with Dr. Doobie Houser, Dr. Doug Ross, or Dr. Adam Bricker, or do you want more details about these providers?
+2026-02-17T03:52:03.942662548Z [inf]  Patient reply: Oh, could you check for openings with Dr. Doobie Houser?
+2026-02-17T03:52:03.942668766Z [err]  100.64.0.5 - - [17/Feb/2026 03:52:03] "POST /recording HTTP/1.1" 200 -
+2026-02-17T03:52:33.283454761Z [inf]  Saved audio: audio/CA319d833e674e3f0c5e482df7856cd975_1771300349.wav
+2026-02-17T03:52:33.283460624Z [inf]  Clinic said: Sure. I'll check for available appointments with Dr. Doogie Hauser. What type of appointment do you need? For example, a new patient consultation, follow-up consultation, procedure, or a physical therapy session?
+2026-02-17T03:52:33.283465330Z [inf]  Patient reply: I'm looking for a follow-up consultation, if that helps.
+2026-02-17T03:52:33.283469547Z [err]  100.64.0.2 - - [17/Feb/2026 03:52:33] "POST /recording HTTP/1.1" 200 -
+2026-02-17T03:53:13.424704253Z [inf]  Saved audio: audio/CA319d833e674e3f0c5e482df7856cd975_1771300387.wav
+2026-02-17T03:53:13.424711691Z [inf]  Clinic said: Perfect. Let me check for follow-up consultation openings with Dr. Doogie Houser one moment while I find the next available time. Dr. Doogie Houser has openings for follow-up consultations this week and early next week. The earliest slot is Tuesday, February 17th at 10 a.m. Would you like that or do you have a preferred time or day?
+2026-02-17T03:53:13.424784785Z [inf]  Patient reply: Oh, I actually prefer Dr. Smith, but I can only do Tuesday afternoons after 3 PM; if that's not an option, I'd rather see someone else.
+2026-02-17T03:53:13.424791415Z [err]  100.64.0.11 - - [17/Feb/2026 03:53:09] "POST /recording HTTP/1.1" 200 -
+2026-02-17T03:53:53.534502844Z [inf]  Saved audio: audio/CA319d833e674e3f0c5e482df7856cd975_1771300428.wav
+2026-02-17T03:53:53.534509846Z [inf]  Clinic said: Dr. Smith isn't available at Pivot Point Orthopedics. For Tuesday afternoons after 3 p.m., I don't see openings with Dr. Doody Houser that late, but I can check other providers for you. Would you like to see Dr. Dub Ross or Dr. Adam Bricker instead?
+2026-02-17T03:53:53.534535792Z [inf]  Patient reply: Oh, if Dr. Smith isn’t available, I guess I’ll go with Dr. Dub Ross then.
+2026-02-17T03:53:53.534544544Z [err]  100.64.0.12 - - [17/Feb/2026 03:53:51] "POST /recording HTTP/1.1" 200 -
+2026-02-17T03:54:23.699636445Z [inf]  Saved audio: audio/CA319d833e674e3f0c5e482df7856cd975_1771300458.wav
+2026-02-17T03:54:23.699640683Z [inf]  Clinic said: No problem. I'll check for Tuesday afternoon openings with Dr. Doug Roth. Just to confirm, you're still looking for a follow-up consultation, right?
+2026-02-17T03:54:23.699645028Z [inf]  Patient reply: Yes, that's right, just a follow-up consultation.
+2026-02-17T03:54:23.699649166Z [err]  100.64.0.9 - - [17/Feb/2026 03:54:19] "POST /recording HTTP/1.1" 200 -
+2026-02-17T03:54:53.147163569Z [inf]  Saved audio: audio/CA319d833e674e3f0c5e482df7856cd975_1771300484.wav
+2026-02-17T03:54:53.147170819Z [inf]  Clinic said: There are no openings with Dr. Doug Ross for a follow-up consultation on Tuesday afternoons next week. Would you like to try a different date or should I check with Dr. Adam Bricker for Tuesday afternoon?
+2026-02-17T03:54:53.147175760Z [inf]  Patient reply: Hmm, if Dr. Smith isn't available on Tuesday afternoons, maybe it’s best to check with Dr. Adam Bricker instead.
+2026-02-17T03:54:53.147181246Z [inf]  
+2026-02-17T03:54:53.147185934Z [inf]  ========== FULL TRANSCRIPT ==========
+2026-02-17T03:54:53.147191141Z [inf]  CLINIC: Gracias por llamar a Pivot Point Orthopedics, parte de Pretty Good AI. ¿Estoy hablando con Alex?
+2026-02-17T03:54:53.147196976Z [inf]  PATIENT: Yes, this is Alex.
+2026-02-17T03:54:53.147203366Z [inf]  CLINIC: Got it. Alex, when is your date of birth?
+2026-02-17T03:54:53.147211293Z [inf]  PATIENT: Sure, my date of birth is January 15, 1990.
+2026-02-17T03:54:53.147217392Z [inf]  CLINIC: The birthday you gave doesn't match our records, but for demo purposes, I'll accept it. How may I help you today?
+2026-02-17T03:54:53.147223266Z [inf]  PATIENT: Oh, great, thanks! I’d like to schedule an appointment, preferably with Dr. Smith, if she’s available.
+2026-02-17T03:54:53.147228536Z [inf]  CLINIC: Dr. Smith isn't listed with Pivot Point Orthopedics. Would you like me to check for openings with Dr. Doobie Houser, Dr. Doug Ross, or Dr. Adam Bricker, or do you want more details about these providers?
+2026-02-17T03:54:53.147236663Z [inf]  PATIENT: Oh, could you check for openings with Dr. Doobie Houser?
+2026-02-17T03:54:53.147242015Z [inf]  CLINIC: Sure. I'll check for available appointments with Dr. Doogie Hauser. What type of appointment do you need? For example, a new patient consultation, follow-up consultation, procedure, or a physical therapy session?
+2026-02-17T03:54:53.147248372Z [inf]  PATIENT: I'm looking for a follow-up consultation, if that helps.
+2026-02-17T03:54:53.149736044Z [inf]  CLINIC: Perfect. Let me check for follow-up consultation openings with Dr. Doogie Houser one moment while I find the next available time. Dr. Doogie Houser has openings for follow-up consultations this week and early next week. The earliest slot is Tuesday, February 17th at 10 a.m. Would you like that or do you have a preferred time or day?
+2026-02-17T03:54:53.149747621Z [inf]  PATIENT: Oh, I actually prefer Dr. Smith, but I can only do Tuesday afternoons after 3 PM; if that's not an option, I'd rather see someone else.
+2026-02-17T03:54:53.149753049Z [inf]  CLINIC: Dr. Smith isn't available at Pivot Point Orthopedics. For Tuesday afternoons after 3 p.m., I don't see openings with Dr. Doody Houser that late, but I can check other providers for you. Would you like to see Dr. Dub Ross or Dr. Adam Bricker instead?
+2026-02-17T03:54:53.149758140Z [inf]  PATIENT: Oh, if Dr. Smith isn’t available, I guess I’ll go with Dr. Dub Ross then.
+2026-02-17T03:54:53.149764165Z [inf]  CLINIC: No problem. I'll check for Tuesday afternoon openings with Dr. Doug Roth. Just to confirm, you're still looking for a follow-up consultation, right?
+2026-02-17T03:54:53.149770241Z [inf]  PATIENT: Yes, that's right, just a follow-up consultation.
+2026-02-17T03:54:53.149776391Z [inf]  CLINIC: There are no openings with Dr. Doug Ross for a follow-up consultation on Tuesday afternoons next week. Would you like to try a different date or should I check with Dr. Adam Bricker for Tuesday afternoon?
+2026-02-17T03:54:53.149782541Z [inf]  PATIENT: Hmm, if Dr. Smith isn't available on Tuesday afternoons, maybe it’s best to check with Dr. Adam Bricker instead.
+2026-02-17T03:54:53.149788385Z [inf]  
+2026-02-17T03:54:53.149793994Z [inf]  ========== END TRANSCRIPT ==========
+2026-02-17T03:54:53.149799168Z [inf]  
+2026-02-17T03:54:53.149810814Z [inf]  
+2026-02-17T03:54:53.149821204Z [inf]  ========== EVALUATION ==========
+2026-02-17T03:54:53.149826798Z [inf]  Task Completion: Partial  
+2026-02-17T03:54:53.151949781Z [inf]  Confusion Detected: Yes (The clinic staff confused Dr. Doobie Houser with "Dr. Doogie Hauser" and "Dr. Doug Roth" with "Dr. Doug Ross," which may confuse the patient.)  
+2026-02-17T03:54:53.151959852Z [inf]  Hallucination: Yes (The clinic incorrectly referenced Dr. Smith being unavailable in their records despite the patient requesting them. It seems assumed availability was misrepresented.)  
+2026-02-17T03:54:53.151967022Z [inf]  Conversation Quality Issues: Misnaming of doctors, delay in confirming appointment preferences, ambiguous responses about availability.  
+2026-02-17T03:54:53.151973698Z [inf]  Overall Score: 6
+2026-02-17T03:54:53.151979160Z [inf]  ========== END EVALUATION ==========
+2

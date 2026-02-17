@@ -1,0 +1,67 @@
+2026-02-17T02:12:00.217210498Z [inf]  Selected scenario: normal_new_patient
+2026-02-17T02:12:00.217217293Z [err]  100.64.0.3 - - [17/Feb/2026 02:11:52] "POST /voice HTTP/1.1" 200 -
+2026-02-17T02:12:20.209185400Z [inf]  Saved audio: audio/CAdeace7737a4a7f6523d78b9aec4d3aa8_1771294333.wav
+2026-02-17T02:12:20.209192608Z [inf]  Clinic said: Thanks for calling Pivot Point Orthopedics, part of Pretty Good AI. Am I speaking with Alex?
+2026-02-17T02:12:20.209198645Z [inf]  Patient reply: Yes, this is Alex.
+2026-02-17T02:12:20.209204309Z [err]  100.64.0.4 - - [17/Feb/2026 02:12:15] "POST /recording HTTP/1.1" 200 -
+2026-02-17T02:12:29.372536618Z [inf]  Saved audio: audio/CAdeace7737a4a7f6523d78b9aec4d3aa8_1771294349.wav
+2026-02-17T02:12:31.210306164Z [inf]  Clinic said: Alex, can you tell me your date of birth to verify your identity?
+2026-02-17T02:12:32.161021528Z [inf]  Patient reply: Sure, my date of birth is March 15, 1990.
+2026-02-17T02:12:32.161027537Z [err]  100.64.0.4 - - [17/Feb/2026 02:12:31] "POST /recording HTTP/1.1" 200 -
+2026-02-17T02:13:11.548273818Z [inf]  Saved audio: audio/CAdeace7737a4a7f6523d78b9aec4d3aa8_1771294385.wav
+2026-02-17T02:13:11.548285082Z [inf]  Clinic said: Thanks, Alex. The birthday you gave doesn't match our records, but for demo purposes, I'll accept it. How may I help you today? The date of birth doesn't match our records, but for demo purposes, I'll accept it. How can I help you today?
+2026-02-17T02:13:11.548290563Z [inf]  Patient reply: I'd like to schedule a new patient consultation for next week, please.
+2026-02-17T02:13:11.548296603Z [err]  100.64.0.5 - - [17/Feb/2026 02:13:08] "POST /recording HTTP/1.1" 200 -
+2026-02-17T02:13:51.548367549Z [inf]  Saved audio: audio/CAdeace7737a4a7f6523d78b9aec4d3aa8_1771294422.wav
+2026-02-17T02:13:51.548373679Z [inf]  Clinic said: Let me check available new patient consultation slots for next week. One moment while I find auctions for you. We have openings for new patient consultations next week with both Dr. Adam Bricker and Dr. Duvy Houser. Would you prefer a certain day or time of day, morning or afternoon?
+2026-02-17T02:13:51.548381884Z [inf]  Patient reply: I’d prefer a morning appointment, please.
+2026-02-17T02:13:51.548388134Z [err]  100.64.0.2 - - [17/Feb/2026 02:13:44] "POST /recording HTTP/1.1" 200 -
+2026-02-17T02:14:10.968668079Z [inf]  Saved audio: audio/CAdeace7737a4a7f6523d78b9aec4d3aa8_1771294445.wav
+2026-02-17T02:14:10.968673800Z [inf]  Clinic said: Got the next available morning slot is Tuesday, February 24th at 9 a.m. With dr Adam Bricker does that work for you, or would you like a different day?
+2026-02-17T02:14:10.968678673Z [inf]  Patient reply: That works for me, thank you!
+2026-02-17T02:14:10.968685104Z [err]  100.64.0.6 - - [17/Feb/2026 02:14:07] "POST /recording HTTP/1.1" 200 -
+2026-02-17T02:14:40.970501877Z [inf]  Saved audio: audio/CAdeace7737a4a7f6523d78b9aec4d3aa8_1771294480.wav
+2026-02-17T02:14:41.889569009Z [inf]  Clinic said: Perfect. Before I book your appointment on Tuesday, February 24th at 9 a.m. with Dr. Adam Bricker, can you briefly share the reason for your visit? Great. I'll book you for Tuesday, February 24th at 9 a.m. with Dr. Adam Bricker.
+2026-02-17T02:14:42.921432203Z [inf]  Patient reply: I'm experiencing some persistent headaches and would like to get them checked out.
+2026-02-17T02:14:42.921437422Z [err]  100.64.0.3 - - [17/Feb/2026 02:14:42] "POST /recording HTTP/1.1" 200 -
+2026-02-17T02:15:12.301547396Z [inf]  Saved audio: audio/CAdeace7737a4a7f6523d78b9aec4d3aa8_1771294507.wav
+2026-02-17T02:15:12.301553547Z [inf]  Clinic said: Got it. Let me confirm. I'm booking you for a new patient consultation on Tuesday, February 24th at 9 a.m. with Dr. Adam Bricker for persistent headaches. Is that correct?
+2026-02-17T02:15:12.301561766Z [inf]  Patient reply: Yes, that’s correct. Thank you!
+2026-02-17T02:15:12.301568138Z [err]  100.64.0.7 - - [17/Feb/2026 02:15:09] "POST /recording HTTP/1.1" 200 -
+2026-02-17T02:15:52.509168619Z [inf]  Patient reply: Yes, please send me a text reminder. Thank you!
+2026-02-17T02:15:52.509181577Z [err]  100.64.0.6 - - [17/Feb/2026 02:15:45] "POST /recording HTTP/1.1" 200 -
+2026-02-17T02:15:52.509380613Z [inf]  Saved audio: audio/CAdeace7737a4a7f6523d78b9aec4d3aa8_1771294542.wav
+2026-02-17T02:15:52.509390424Z [inf]  Clinic said: Your appointment is set for Tuesday February 24th at 9 a.m. with Dr. Adam Bricker. Please bring a government-issue photo ID and your insurance card. Would you like a text reminder for this appointment? Your appointment is booked.
+2026-02-17T02:16:11.563167842Z [inf]  Saved audio: audio/CAdeace7737a4a7f6523d78b9aec4d3aa8_1771294566.wav
+2026-02-17T02:16:11.563173457Z [inf]  Clinic said: A text reminder for your appointment has just been sent to your phone ending in 1-895. Let me know if you need anything else.
+2026-02-17T02:16:11.563178564Z [inf]  Patient reply: Thank you! I appreciate it.
+2026-02-17T02:16:11.563182832Z [inf]  
+2026-02-17T02:16:11.563186731Z [inf]  ========== FULL TRANSCRIPT ==========
+2026-02-17T02:16:11.563191085Z [inf]  CLINIC: Thanks for calling Pivot Point Orthopedics, part of Pretty Good AI. Am I speaking with Alex?
+2026-02-17T02:16:11.563196060Z [inf]  PATIENT: Yes, this is Alex.
+2026-02-17T02:16:11.563201073Z [inf]  CLINIC: Alex, can you tell me your date of birth to verify your identity?
+2026-02-17T02:16:11.563205452Z [inf]  PATIENT: Sure, my date of birth is March 15, 1990.
+2026-02-17T02:16:11.563209784Z [inf]  CLINIC: Thanks, Alex. The birthday you gave doesn't match our records, but for demo purposes, I'll accept it. How may I help you today? The date of birth doesn't match our records, but for demo purposes, I'll accept it. How can I help you today?
+2026-02-17T02:16:11.563214203Z [inf]  PATIENT: I'd like to schedule a new patient consultation for next week, please.
+2026-02-17T02:16:11.563220143Z [inf]  CLINIC: Let me check available new patient consultation slots for next week. One moment while I find auctions for you. We have openings for new patient consultations next week with both Dr. Adam Bricker and Dr. Duvy Houser. Would you prefer a certain day or time of day, morning or afternoon?
+2026-02-17T02:16:11.563226128Z [inf]  PATIENT: I’d prefer a morning appointment, please.
+2026-02-17T02:16:11.563232082Z [inf]  CLINIC: Got the next available morning slot is Tuesday, February 24th at 9 a.m. With dr Adam Bricker does that work for you, or would you like a different day?
+2026-02-17T02:16:11.563238338Z [inf]  PATIENT: That works for me, thank you!
+2026-02-17T02:16:11.567468608Z [inf]  CLINIC: Perfect. Before I book your appointment on Tuesday, February 24th at 9 a.m. with Dr. Adam Bricker, can you briefly share the reason for your visit? Great. I'll book you for Tuesday, February 24th at 9 a.m. with Dr. Adam Bricker.
+2026-02-17T02:16:11.567487637Z [inf]  PATIENT: I'm experiencing some persistent headaches and would like to get them checked out.
+2026-02-17T02:16:11.567495979Z [inf]  CLINIC: Got it. Let me confirm. I'm booking you for a new patient consultation on Tuesday, February 24th at 9 a.m. with Dr. Adam Bricker for persistent headaches. Is that correct?
+2026-02-17T02:16:11.567503209Z [inf]  PATIENT: Yes, that’s correct. Thank you!
+2026-02-17T02:16:11.567509818Z [inf]  CLINIC: Your appointment is set for Tuesday February 24th at 9 a.m. with Dr. Adam Bricker. Please bring a government-issue photo ID and your insurance card. Would you like a text reminder for this appointment? Your appointment is booked.
+2026-02-17T02:16:11.567516978Z [inf]  PATIENT: Yes, please send me a text reminder. Thank you!
+2026-02-17T02:16:11.567523466Z [inf]  CLINIC: A text reminder for your appointment has just been sent to your phone ending in 1-895. Let me know if you need anything else.
+2026-02-17T02:16:11.567529886Z [inf]  PATIENT: Thank you! I appreciate it.
+2026-02-17T02:16:11.567537397Z [inf]  
+2026-02-17T02:16:11.567545804Z [inf]  ========== END TRANSCRIPT ==========
+2026-02-17T02:16:11.567552758Z [inf]  
+2026-02-17T02:16:11.567559480Z [inf]  
+2026-02-17T02:16:11.567569233Z [inf]  ========== EVALUATION ==========
+2026-02-17T02:16:11.567582917Z [inf]  Task Completion: Yes  
+2026-02-17T02:16:11.567591696Z [inf]  Confusion Detected: Yes (The clinic's system initially flagged the patient's date of birth but still allowed the conversation to proceed. This may create confusion about the records.)  
+2026-02-17T02:16:11.567598413Z [inf]  Hallucination: No (There are no indicators of hallucination; the responses are relevant to the conversation.)  
+2026-02-17T02:16:11.571116172Z [inf]  Conversation Quality Issues: Repetition of the phrase "The date of birth doesn't match our records, but for demo purposes, I'll accept it" is unnecessary; there is a typo in "Got the next available..." which should be "The next available..."  
+2026-02-17T02:16:11.571122280Z [inf]  Overall Score: 7

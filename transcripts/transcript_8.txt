@@ -1,0 +1,33 @@
+2026-02-17T03:42:49.856224928Z [inf]  Selected scenario: anxious_topic_drift
+2026-02-17T03:42:49.856236748Z [err]  100.64.0.3 - - [17/Feb/2026 03:42:45] "POST /voice HTTP/1.1" 200 -
+2026-02-17T03:43:09.161083851Z [inf]  Saved audio: audio/CA712770fde9bbc689e0f0060a48367cf2_1771299783.wav
+2026-02-17T03:43:09.161090234Z [inf]  Clinic said: para español, oprima el 2.
+2026-02-17T03:43:09.161096591Z [inf]  Patient reply: No, thank you, I prefer to continue in English.
+2026-02-17T03:43:09.161103010Z [err]  100.64.0.10 - - [17/Feb/2026 03:43:05] "POST /recording HTTP/1.1" 200 -
+2026-02-17T03:43:29.156871627Z [inf]  Saved audio: audio/CA712770fde9bbc689e0f0060a48367cf2_1771299799.wav
+2026-02-17T03:43:29.156882782Z [inf]  Clinic said: Got it. How may I help you today?
+2026-02-17T03:43:29.156889657Z [inf]  Patient reply: I'd like to schedule an appointment for next week, please.
+2026-02-17T03:43:29.156897761Z [err]  100.64.0.3 - - [17/Feb/2026 03:43:22] "POST /recording HTTP/1.1" 200 -
+2026-02-17T03:43:37.805270416Z [inf]  Saved audio: audio/CA712770fde9bbc689e0f0060a48367cf2_1771299817.wav
+2026-02-17T03:43:38.957846627Z [inf]  Clinic said: Can I get your name and date of birth to get started with your appointment?
+2026-02-17T03:43:39.939906361Z [inf]  Patient reply: Sure, my name is Alex Johnson and my date of birth is March 15, 1985.
+2026-02-17T03:43:39.942577539Z [err]  100.64.0.2 - - [17/Feb/2026 03:43:39] "POST /recording HTTP/1.1" 200 -
+2026-02-17T03:44:10.442384014Z [inf]  Saved audio: audio/CA712770fde9bbc689e0f0060a48367cf2_1771299850.wav
+2026-02-17T03:44:11.391194398Z [inf]  Clinic said: Let me confirm your information. I have Alex Johnson, date of birth, March 15, 1985. Is that correct? If so, can you please spell your first and last name to make sure I have it right? Okay.
+2026-02-17T03:44:13.205293287Z [inf]  Patient reply: Yes, that's correct—A-L-E-X J-O-H-N-S-O-N. Also, can I get a refill on my allergy medication? Anyway, I was looking to schedule an appointment for next week.
+2026-02-17T03:44:13.205297499Z [err]  100.64.0.11 - - [17/Feb/2026 03:44:12] "POST /recording HTTP/1.1" 200 -
+2026-02-17T03:44:53.436961531Z [inf]  Saved audio: audio/CA712770fde9bbc689e0f0060a48367cf2_1771299886.wav
+2026-02-17T03:44:53.436971189Z [inf]  Clinic said: Would you like me to look up your record using your phone number? If yes, please provide the number you have on file with us. If you're not sure, just confirm your first name, last name, and date of birth once more and I'll try again.
+2026-02-17T03:44:53.436981807Z [inf]  Patient reply: Sure, my phone number is 555-0123. By the way, can I get a refill on my anxiety meds? Anyway, I’d like to schedule an appointment.
+2026-02-17T03:44:53.436988623Z [err]  100.64.0.5 - - [17/Feb/2026 03:44:48] "POST /recording HTTP/1.1" 200 -
+2026-02-17T03:45:34.114186502Z [inf]  Patient reply: That's correct, thank you! Also, I was wondering if I could get a refill on my prescription too?
+2026-02-17T03:45:34.114196812Z [err]  100.64.0.12 - - [17/Feb/2026 03:45:30] "POST /recording HTTP/1.1" 200 -
+2026-02-17T03:45:34.114400759Z [inf]  Saved audio: audio/CA712770fde9bbc689e0f0060a48367cf2_1771299926.wav
+2026-02-17T03:45:34.114406779Z [inf]  Clinic said: Let me confirm your details. I have your first name as Alex, last name Johnson, date of birth March 15, 1985, and phone number as 5550123. Is all that correct? Yes. Okay.
+2026-02-17T03:46:13.330520135Z [inf]  Saved audio: audio/CA712770fde9bbc689e0f0060a48367cf2_1771299967.wav
+2026-02-17T03:46:13.330531196Z [inf]  Clinic said: I'm not able to access your record right now, so I'll make sure our clinic support team follows up. They'll get back to you about scheduling your appointment and the medication refill as soon as they can. Is there anything else you'd like me to note for the team?
+2026-02-17T03:46:13.330538037Z [inf]  Patient reply: No, that covers everything for now, thank you!
+2026-02-17T03:46:13.330543359Z [err]  100.64.0.8 - - [17/Feb/2026 03:46:10] "POST /recording HTTP/1.1" 200 -
+2026-02-17T03:46:33.325840564Z [inf]  Saved audio: audio/CA712770fde9bbc689e0f0060a48367cf2_1771299987.wav
+2026-02-17T03:46:33.325849390Z [inf]  Clinic said: Got it. The clinic support team will follow up with you as soon as possible. Have a good day.
+2026-02-17T03:46:33.325855326Z [inf]  Patient reply: Thank you, I appreciate it!

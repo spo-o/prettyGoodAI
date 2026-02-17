@@ -1,0 +1,71 @@
+2026-02-17T03:56:24.399804499Z [inf]  Selected scenario: rambling_identity_verification
+2026-02-17T03:56:24.399812680Z [err]  100.64.0.7 - - [17/Feb/2026 03:56:15] "POST /voice HTTP/1.1" 200 -
+2026-02-17T03:56:33.293824727Z [inf]  Saved audio: audio/CA9571afe15777ecbcf55c556b1b26ebe6_1771300592.wav
+2026-02-17T03:56:35.409244975Z [inf]  Clinic said: Thanks for calling Pivot Point Orthopedics, part of Pretty Good AI. Am I speaking with Alex?
+2026-02-17T03:56:36.322362386Z [inf]  Patient reply: Yes, this is Alex.
+2026-02-17T03:56:36.322374408Z [err]  100.64.0.9 - - [17/Feb/2026 03:56:35] "POST /recording HTTP/1.1" 200 -
+2026-02-17T03:56:55.982062260Z [inf]  Saved audio: audio/CA9571afe15777ecbcf55c556b1b26ebe6_1771300609.wav
+2026-02-17T03:56:55.982067487Z [inf]  Clinic said: Got it. Alex, can you tell me your date of birth to verify your identity?
+2026-02-17T03:56:55.982073063Z [inf]  Patient reply: Oh, I always mix up dates, especially since my sister's is so close, but mine is actually July 22, 1985.
+2026-02-17T03:56:55.982077980Z [err]  100.64.0.8 - - [17/Feb/2026 03:56:51] "POST /recording HTTP/1.1" 200 -
+2026-02-17T03:57:25.988566067Z [inf]  Saved audio: audio/CA9571afe15777ecbcf55c556b1b26ebe6_1771300639.wav
+2026-02-17T03:57:25.988571831Z [inf]  Clinic said: It looks like your birthday doesn't match our records, but for demo purposes, I'll accept it. How may I help you today?
+2026-02-17T03:57:25.988576531Z [inf]  Patient reply: "I'm just calling to ask about scheduling an appointment."
+2026-02-17T03:57:25.988581058Z [err]  100.64.0.5 - - [17/Feb/2026 03:57:21] "POST /recording HTTP/1.1" 200 -
+2026-02-17T03:58:05.489594944Z [inf]  Saved audio: audio/CA9571afe15777ecbcf55c556b1b26ebe6_1771300675.wav
+2026-02-17T03:58:05.489598810Z [inf]  Clinic said: Thought it, Alex. What type of appointment would you like to schedule? For example, a new patient consultation, follow-up, procedure, or physical therapy session? Understood. What type of appointment would you like to schedule? For example, a new patient consultation.
+2026-02-17T03:58:05.489603490Z [inf]  Patient reply: "I'd like to schedule a new patient consultation, please."
+2026-02-17T03:58:05.489608589Z [err]  100.64.0.7 - - [17/Feb/2026 03:57:57] "POST /recording HTTP/1.1" 200 -
+2026-02-17T03:58:25.106549555Z [inf]  Saved audio: audio/CA9571afe15777ecbcf55c556b1b26ebe6_1771300696.wav
+2026-02-17T03:58:25.106557595Z [inf]  Clinic said: Perfect. Would you like to see a specific provider or are you open to the first available for your new patient consultation?
+2026-02-17T03:58:25.106565813Z [inf]  Patient reply: I'm open to the first available for my new patient consultation.
+2026-02-17T03:58:25.106572023Z [err]  100.64.0.2 - - [17/Feb/2026 03:58:18] "POST /recording HTTP/1.1" 200 -
+2026-02-17T03:58:54.662431803Z [inf]  Saved audio: audio/CA9571afe15777ecbcf55c556b1b26ebe6_1771300732.wav
+2026-02-17T03:58:54.662437336Z [inf]  Clinic said: Got it. Let me check the soonest available times for a new patient consultation. One moment while I fetch the openings. The earliest available new patient consultation is Wednesday, February 18th at 1030 a.m. with Dr. Bricker. There are also openings later in the week if you need a different time. Would you like to book the 1030 a.m. slot or should I list another day or time?
+2026-02-17T03:58:54.662442625Z [inf]  Patient reply: I'll take the 10:30 a.m. slot with Dr. Bricker, please!
+2026-02-17T03:58:54.662447758Z [err]  100.64.0.7 - - [17/Feb/2026 03:58:54] "POST /recording HTTP/1.1" 200 -
+2026-02-17T03:59:23.986318876Z [inf]  Saved audio: audio/CA9571afe15777ecbcf55c556b1b26ebe6_1771300758.wav
+2026-02-17T03:59:23.986327966Z [inf]  Clinic said: Great choice. Before I bunk your new patient consultation for Wednesday, February 18th at 10.30 a.m. with Dr. Bricker, can you briefly tell me the reason for your visit?
+2026-02-17T03:59:23.986335153Z [inf]  Patient reply: "I'm just looking for a general check-up and some advice on managing my allergies."
+2026-02-17T03:59:23.986341424Z [err]  100.64.0.7 - - [17/Feb/2026 03:59:22] "POST /recording HTTP/1.1" 200 -
+2026-02-17T04:00:04.136925289Z [inf]  Saved audio: audio/CA9571afe15777ecbcf55c556b1b26ebe6_1771300798.wav
+2026-02-17T04:00:04.136930939Z [inf]  Clinic said: Your new patient consultation is set for Wednesday, February 18th at 1030 a.m. with Dr. Bricker. Please bring a government issued photo ID and your insurance card. Would you like a text reminder for your appointment?
+2026-02-17T04:00:04.136936140Z [inf]  Patient reply: Yes, a text reminder would be great, thank you!
+2026-02-17T04:00:04.136941842Z [err]  100.64.0.5 - - [17/Feb/2026 04:00:00] "POST /recording HTTP/1.1" 200 -
+2026-02-17T04:00:23.419075244Z [inf]  PATIENT: I'll take the 10:30 a.m. slot with Dr. Bricker, please!
+2026-02-17T04:00:23.419077181Z [inf]  
+2026-02-17T04:00:23.419083908Z [inf]  CLINIC: Great choice. Before I bunk your new patient consultation for Wednesday, February 18th at 10.30 a.m. with Dr. Bricker, can you briefly tell me the reason for your visit?
+2026-02-17T04:00:23.419092975Z [inf]  PATIENT: "I'm just looking for a general check-up and some advice on managing my allergies."
+2026-02-17T04:00:23.419096449Z [inf]  ========== END TRANSCRIPT ==========
+2026-02-17T04:00:23.419108238Z [inf]  CLINIC: Your new patient consultation is set for Wednesday, February 18th at 1030 a.m. with Dr. Bricker. Please bring a government issued photo ID and your insurance card. Would you like a text reminder for your appointment?
+2026-02-17T04:00:23.419111897Z [inf]  
+2026-02-17T04:00:23.419123449Z [inf]  PATIENT: Yes, a text reminder would be great, thank you!
+2026-02-17T04:00:23.419137294Z [inf]  CLINIC: You'll get a text reminder at your number ending in 1895. If you need anything else, just call. Take care!
+2026-02-17T04:00:23.419147745Z [inf]  PATIENT: "Thanks so much! I appreciate it!"
+2026-02-17T04:00:23.419408169Z [inf]  Saved audio: audio/CA9571afe15777ecbcf55c556b1b26ebe6_1771300821.wav
+2026-02-17T04:00:23.419415392Z [inf]  Clinic said: You'll get a text reminder at your number ending in 1895. If you need anything else, just call. Take care!
+2026-02-17T04:00:23.419423015Z [inf]  Patient reply: "Thanks so much! I appreciate it!"
+2026-02-17T04:00:23.419430712Z [inf]  
+2026-02-17T04:00:23.419439091Z [inf]  ========== FULL TRANSCRIPT ==========
+2026-02-17T04:00:23.419446350Z [inf]  CLINIC: Thanks for calling Pivot Point Orthopedics, part of Pretty Good AI. Am I speaking with Alex?
+2026-02-17T04:00:23.419453826Z [inf]  PATIENT: Yes, this is Alex.
+2026-02-17T04:00:23.419461229Z [inf]  CLINIC: Got it. Alex, can you tell me your date of birth to verify your identity?
+2026-02-17T04:00:23.419468122Z [inf]  PATIENT: Oh, I always mix up dates, especially since my sister's is so close, but mine is actually July 22, 1985.
+2026-02-17T04:00:23.419475434Z [inf]  CLINIC: It looks like your birthday doesn't match our records, but for demo purposes, I'll accept it. How may I help you today?
+2026-02-17T04:00:23.419482363Z [inf]  PATIENT: "I'm just calling to ask about scheduling an appointment."
+2026-02-17T04:00:23.419489725Z [inf]  CLINIC: Thought it, Alex. What type of appointment would you like to schedule? For example, a new patient consultation, follow-up, procedure, or physical therapy session? Understood. What type of appointment would you like to schedule? For example, a new patient consultation.
+2026-02-17T04:00:23.419496969Z [inf]  PATIENT: "I'd like to schedule a new patient consultation, please."
+2026-02-17T04:00:23.419504122Z [inf]  CLINIC: Perfect. Would you like to see a specific provider or are you open to the first available for your new patient consultation?
+2026-02-17T04:00:23.419510641Z [inf]  PATIENT: I'm open to the first available for my new patient consultation.
+2026-02-17T04:00:23.419517081Z [inf]  CLINIC: Got it. Let me check the soonest available times for a new patient consultation. One moment while I fetch the openings. The earliest available new patient consultation is Wednesday, February 18th at 1030 a.m. with Dr. Bricker. There are also openings later in the week if you need a different time. Would you like to book the 1030 a.m. slot or should I list another day or time?
+2026-02-17T04:00:25.724590680Z [inf]  Hallucination: Yes (The date provided by the clinic for the appointment, February 18, 2025, is not a Wednesday; it is necessary to ensure accurate date and day matches.)  
+2026-02-17T04:00:25.724593577Z [inf]  
+2026-02-17T04:00:25.724602084Z [inf]  Saved evaluation report: reports/CA9571afe15777ecbcf55c556b1b26ebe6_evaluation.txt
+2026-02-17T04:00:25.724609122Z [err]  100.64.0.6 - - [17/Feb/2026 04:00:24] "POST /recording HTTP/1.1" 200 -
+2026-02-17T04:00:25.724665123Z [inf]  
+2026-02-17T04:00:25.724673983Z [inf]  Conversation Quality Issues: Repeated query about appointment type ("What type of appointment would you like to schedule?" was repeated unnecessarily), Incorrect date and day mismatch for the appointment.  
+2026-02-17T04:00:25.724675273Z [inf]  ========== EVALUATION ==========
+2026-02-17T04:00:25.724683254Z [inf]  Task Completion: Yes  
+2026-02-17T04:00:25.724686831Z [inf]  Overall Score: 6
+2026-02-17T04:00:25.724691387Z [inf]  Confusion Detected: No  
+2026-02-17T04:00:25.724696787Z [inf]  ========== END EVALUATION ==========

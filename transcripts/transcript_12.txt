@@ -1,0 +1,72 @@
+2026-02-17T04:06:29.667725306Z [inf]  ========== EVALUATION ==========
+2026-02-17T04:07:39.973384392Z [inf]  Selected scenario: long_silence
+2026-02-17T04:07:39.973388279Z [err]  100.64.0.12 - - [17/Feb/2026 04:07:35] "POST /voice HTTP/1.1" 200 -
+2026-02-17T04:08:00.065703127Z [inf]  Saved audio: audio/CAd049bacb522cd522f490c66c3d8c6279_1771301272.wav
+2026-02-17T04:08:00.065709470Z [inf]  Clinic said: para español, oprima el 2.
+2026-02-17T04:08:00.065716458Z [inf]  Patient reply: I don’t speak Spanish, thank you.
+2026-02-17T04:08:00.065722686Z [err]  100.64.0.5 - - [17/Feb/2026 04:07:55] "POST /recording HTTP/1.1" 200 -
+2026-02-17T04:08:08.228226771Z [inf]  Saved audio: audio/CAd049bacb522cd522f490c66c3d8c6279_1771301288.wav
+2026-02-17T04:08:09.223187520Z [inf]  Clinic said: No problem. How may I help you today?
+2026-02-17T04:08:09.898855080Z [inf]  Patient reply: "I'd like to schedule an appointment, please."
+2026-02-17T04:08:09.898860238Z [err]  100.64.0.3 - - [17/Feb/2026 04:08:09] "POST /recording HTTP/1.1" 200 -
+2026-02-17T04:08:29.389893172Z [inf]  Saved audio: audio/CAd049bacb522cd522f490c66c3d8c6279_1771301306.wav
+2026-02-17T04:08:29.389898015Z [inf]  Clinic said: To help you schedule an appointment, can you please confirm your date of birth?
+2026-02-17T04:08:29.389902634Z [inf]  Patient reply: Sure, it's January 15, 1985.
+2026-02-17T04:08:29.389910142Z [err]  100.64.0.8 - - [17/Feb/2026 04:08:28] "POST /recording HTTP/1.1" 200 -
+2026-02-17T04:08:59.393455158Z [inf]  Saved audio: audio/CAd049bacb522cd522f490c66c3d8c6279_1771301338.wav
+2026-02-17T04:08:59.393463954Z [inf]  Clinic said: Thanks. Can you also provide your last name so I can find your record? Can you please tell me your last name as well? I'll then look up your record.
+2026-02-17T04:09:00.405804529Z [inf]  Patient reply: Sure, it's Smith.
+2026-02-17T04:09:00.405812243Z [err]  100.64.0.12 - - [17/Feb/2026 04:08:59] "POST /recording HTTP/1.1" 200 -
+2026-02-17T04:09:30.698652858Z [inf]  Saved audio: audio/CAd049bacb522cd522f490c66c3d8c6279_1771301361.wav
+2026-02-17T04:09:30.698658739Z [inf]  Clinic said: Let me confirm, I have your first name as Alex, your last name as Smith, and your date of birth as January 15th, 1985. Is that correct?
+2026-02-17T04:09:30.698665055Z [inf]  Patient reply: Yes, that's correct.
+2026-02-17T04:09:30.698671095Z [err]  100.64.0.10 - - [17/Feb/2026 04:09:23] "POST /recording HTTP/1.1" 200 -
+2026-02-17T04:09:50.730643572Z [inf]  Saved audio: audio/CAd049bacb522cd522f490c66c3d8c6279_1771301383.wav
+2026-02-17T04:09:50.730648284Z [inf]  Clinic said: Would you like me to look up your record using your phone number? If so, can you provide the number you have on file with us? If you're not sure, just let me know.
+2026-02-17T04:09:50.730657192Z [inf]  Patient reply: Uh-huh, my number is 555-1234.
+2026-02-17T04:09:50.730662905Z [err]  100.64.0.5 - - [17/Feb/2026 04:09:45] "POST /recording HTTP/1.1" 200 -
+2026-02-17T04:10:29.880084139Z [inf]  Saved audio: audio/CAd049bacb522cd522f490c66c3d8c6279_1771301419.wav
+2026-02-17T04:10:29.880089314Z [inf]  Clinic said: Let me confirm, I have your phone number as 555-1234, and your date of birth as January 15, 1985. Is that correct? Just to confirm, I have your phone number as 555-1234, and your
+2026-02-17T04:10:29.880095250Z [inf]  Patient reply: Yes, that's correct.
+2026-02-17T04:10:29.880100727Z [err]  100.64.0.5 - - [17/Feb/2026 04:10:22] "POST /recording HTTP/1.1" 200 -
+2026-02-17T04:10:49.897031541Z [inf]  Saved audio: audio/CAd049bacb522cd522f490c66c3d8c6279_1771301448.wav
+2026-02-17T04:10:50.717201699Z [inf]  Clinic said: I can't proceed further right now, but I can make sure our clinic support team follows up with you. I'll document your request so that you can get back to you as soon as possible. One moment while I create a note for the team.
+2026-02-17T04:10:51.722142724Z [inf]  Patient reply: Okay, that works for me.
+2026-02-17T04:10:51.722149388Z [err]  100.64.0.9 - - [17/Feb/2026 04:10:51] "POST /recording HTTP/1.1" 200 -
+2026-02-17T04:11:21.151445253Z [inf]  Saved audio: audio/CAd049bacb522cd522f490c66c3d8c6279_1771301471.wav
+2026-02-17T04:11:21.151461880Z [inf]  Clinic said: Got it. Our clinic support team will follow up with you as soon as they can to schedule your appointment. Is there anything else I can help you with right now?
+2026-02-17T04:11:21.151469101Z [inf]  Patient reply: No, that’s all for now.
+2026-02-17T04:11:21.151476060Z [inf]  
+2026-02-17T04:11:21.151481588Z [inf]  ========== FULL TRANSCRIPT ==========
+2026-02-17T04:11:21.151487287Z [inf]  CLINIC: para español, oprima el 2.
+2026-02-17T04:11:21.151492732Z [inf]  PATIENT: I don’t speak Spanish, thank you.
+2026-02-17T04:11:21.151498347Z [inf]  CLINIC: No problem. How may I help you today?
+2026-02-17T04:11:21.151504509Z [inf]  PATIENT: "I'd like to schedule an appointment, please."
+2026-02-17T04:11:21.151511838Z [inf]  CLINIC: To help you schedule an appointment, can you please confirm your date of birth?
+2026-02-17T04:11:21.151518128Z [inf]  PATIENT: Sure, it's January 15, 1985.
+2026-02-17T04:11:21.151524847Z [inf]  CLINIC: Thanks. Can you also provide your last name so I can find your record? Can you please tell me your last name as well? I'll then look up your record.
+2026-02-17T04:11:21.151531231Z [inf]  PATIENT: Sure, it's Smith.
+2026-02-17T04:11:21.151537988Z [inf]  CLINIC: Let me confirm, I have your first name as Alex, your last name as Smith, and your date of birth as January 15th, 1985. Is that correct?
+2026-02-17T04:11:21.151544412Z [inf]  PATIENT: Yes, that's correct.
+2026-02-17T04:11:21.151551112Z [inf]  CLINIC: Would you like me to look up your record using your phone number? If so, can you provide the number you have on file with us? If you're not sure, just let me know.
+2026-02-17T04:11:21.151557730Z [inf]  PATIENT: Uh-huh, my number is 555-1234.
+2026-02-17T04:11:21.151563988Z [inf]  CLINIC: Let me confirm, I have your phone number as 555-1234, and your date of birth as January 15, 1985. Is that correct? Just to confirm, I have your phone number as 555-1234, and your
+2026-02-17T04:11:21.154343799Z [inf]  PATIENT: Yes, that's correct.
+2026-02-17T04:11:21.154347213Z [inf]  Overall Score: 9
+2026-02-17T04:11:21.154353130Z [inf]  CLINIC: I can't proceed further right now, but I can make sure our clinic support team follows up with you. I'll document your request so that you can get back to you as soon as possible. One moment while I create a note for the team.
+2026-02-17T04:11:21.154358923Z [inf]  PATIENT: Okay, that works for me.
+2026-02-17T04:11:21.154361194Z [inf]  ========== END EVALUATION ==========
+2026-02-17T04:11:21.154364162Z [inf]  CLINIC: Got it. Our clinic support team will follow up with you as soon as they can to schedule your appointment. Is there anything else I can help you with right now?
+2026-02-17T04:11:21.154368857Z [inf]  PATIENT: No, that’s all for now.
+2026-02-17T04:11:21.154372634Z [inf]  
+2026-02-17T04:11:21.154374106Z [inf]  
+2026-02-17T04:11:21.154379898Z [inf]  ========== END TRANSCRIPT ==========
+2026-02-17T04:11:21.154382924Z [inf]  Saved evaluation report: reports/CAd049bacb522cd522f490c66c3d8c6279_evaluation.txt
+2026-02-17T04:11:21.154385527Z [inf]  
+2026-02-17T04:11:21.154390441Z [inf]  
+2026-02-17T04:11:21.154392194Z [err]  100.64.0.12 - - [17/Feb/2026 04:11:13] "POST /recording HTTP/1.1" 200 -
+2026-02-17T04:11:21.154396480Z [inf]  ========== EVALUATION ==========
+2026-02-17T04:11:21.154400261Z [inf]  Task Completion: Yes  
+2026-02-17T04:11:21.154404646Z [inf]  Confusion Detected: No  
+2026-02-17T04:11:21.154409537Z [inf]  Hallucination: No  
+2026-02-17T04:11:21.154414128Z [inf]  Conversation Quality Issues: None  
