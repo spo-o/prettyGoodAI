@@ -28,9 +28,14 @@ from scenarios import SCENARIOS
 
 @app.route("/voice", methods=["POST"])
 def voice():
+    global SCENARIO_INDEX
+
     call_sid = request.form.get("CallSid")
 
-    scenario = random.choice(SCENARIOS)
+    scenario = SCENARIOS[SCENARIO_INDEX % len(SCENARIOS)]
+    SCENARIO_INDEX += 1
+
+    print(f"Selected scenario: {scenario['name']}")
 
     ACTIVE_CALLS[call_sid] = {
         "scenario": scenario,
