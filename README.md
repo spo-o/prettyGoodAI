@@ -73,9 +73,12 @@ The goal is to test conversational robustness, state persistence, intent handlin
 
 ## Project Structure
 
-- `main.py`: The main application file containing the FastAPI server, WebSocket handler, and OpenAI integration
+- `app/main.py`: Flask server handling Twilio voice webhooks, scenario selection, OpenAI transcription (Whisper), GPT-based patient replies, and conversation evaluation
+- `app/scenarios.py`: Contains structured patient behavior scenarios used for stress testing
 - `requirements.txt`: Python dependencies
-- `.env`: Environment variables for API keys and configuration
+- `.env`: Environment variables for Twilio and OpenAI API keys
+- `transcripts/`: Saved conversation transcripts
+- `reports/`: GPT-based evaluation reports for each call
 
 ## Conclusion 
 
